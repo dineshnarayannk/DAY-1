@@ -2,11 +2,13 @@
 
 import os
 import json
+from pathlib import Path
 from dotenv import load_dotenv
 from openai import OpenAI
 
 
-load_dotenv()
+BASE_DIR = Path(__file__).resolve().parent
+load_dotenv(dotenv_path=BASE_DIR / ".env")
 
 
 PROVIDER = os.getenv("PROVIDER", "groq").strip().lower()
@@ -34,7 +36,7 @@ client = OpenAI(
 )
 
 
-with open("data/student_data.json", "r") as file:
+with open(BASE_DIR / "data" / "student_data.json", "r", encoding="utf-8") as file:
     STUDENT_DATA = json.load(file)
 
 

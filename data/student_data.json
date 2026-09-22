@@ -5,5 +5,10 @@
     "attendance": 82,
     "cgpa": 8.1,
     "backlogs": 0,
-    "fees_due": 5000
+    "fees_due": 5000,
+    "course_fees": {
+        "CS101": 12000,
+        "AI202": 18000,
+        "CS303": 15000
+    }
 }

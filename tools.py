@@ -16,7 +16,9 @@ def get_student_data(field: str) -> str:
         "attendance": "attendance",
         "cgpa": "cgpa",
         "backlogs": "backlogs",
-        "fees_due": "fees_due"
+        "fees_due": "fees_due",
+        "course_fees": "course_fees",
+        "course fees": "course_fees"
     }
 
     key = available_fields.get(field)
