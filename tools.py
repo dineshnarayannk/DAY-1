@@ -9,6 +9,7 @@ def get_student_data(field: str) -> str:
     field = field.strip().lower()
 
     available_fields = {
+        
         "name": "name",
         "department": "department",
         "semester": "semester",
@@ -52,7 +53,7 @@ def calculate_fee_status() -> str:
     if fees_due > 0:
         return f"Pending fees: Rs. {fees_due:,}"
 
-    return "No pending fees."
+    return "NO PENDING FEES."
 
 
 TOOL_FUNCTIONS = {
